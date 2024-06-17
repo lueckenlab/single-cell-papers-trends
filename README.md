@@ -15,3 +15,22 @@ The [donors_per_study_plot/data](donors_per_study_plot/data) directory contains 
 - [04_rechecked.csv](donors_per_study_plot/data/04_rechecked.csv) contains the column "rechecked_n_individuals" for cases, when GPT answers disagreed with manual annotation performed previously.
 - [2023_02_21_Copy of Single cell studies database_final.csv](donors_per_study_plot/data/2023_02_21_Copy%20of%20Single%20cell%20studies%20database_final.csv) is the studies database with the "Number individuals" column containing information extracted from GPT answers
 - [supplementary_1_papers_info.csv](donors_per_study_plot/data/supplementary_1_papers_info.csv) is the filtered version of "2023_02_21_Copy of Single cell studies database_final.csv" containing only the information about human-related studies used to build a plot with trends
+
+# System requirements
+- python 3.9
+- Python packages listed in [requirements.txt](requirements.txt)
+
+The code has been tested on MacBook Pro with Apple M1 Pro chip and macOS Monterey Version 12.6.
+
+Note that for using the GPT model, you will need an API key from OpenAI. To get it, register at [OpenAI developer platform](https://platform.openai.com/docs/overview).
+
+# Installation
+1. Install conda following the instructions in the [documentation](https://docs.conda.io/projects/conda/en/stable/user-guide/install/index.html)
+2. Create new environment with Python 3.9:
+`conda create --name single_cell_papers_trends python=3.9`
+3. Activate the environment:
+`conda activate single_cell_papers_trends`
+4. Install python dependencies:
+`pip install -r requirements.txt`
+
+The installation took less than 2 minutes on the MacBook Pro laptop.
