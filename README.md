@@ -34,3 +34,9 @@ Note that for using the GPT model, you will need an API key from OpenAI. To get 
 `pip install -r requirements.txt`
 
 The installation took less than 2 minutes on the MacBook Pro laptop.
+
+# Reproducibility
+
+To reproduce the plot building, run the [02_analysis.ipynb](02_analysis.ipynb). It should take not more that a couple of minutes. All the necessary data is provided in this repository.
+
+To reproduce extraction of the information from papers, run the code in the [01_papers_scrapping.ipynb](01_papers_scrapping.ipynb). Please note that downloading the papers, and extracting the information from them will take several hours. Some manual extraction of numbers from GPT answers would also be needed. While we welcome any feedback on our approach, we would like to point out that it is likely outdated since the field of natural language processing advances at an astonishing rate. Perhaps, a more productive contribution would be to find errors in the data we extracted (if any) or develop a better approach using current best practices.
